@@ -15,7 +15,7 @@ And modify `~/.jupyter/jupyter_notebook_config.json` file like below.
 }
 ```
 
-## What it look like.
+## What it looks like.
 
 ```
 # Initial File Name
