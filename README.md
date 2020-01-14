@@ -1,7 +1,7 @@
 ## How to use
 
 ```
-pip install jupyter-timestampe-filename
+pip install jupyter-timestamp-filename
 jupyter serverextension enable --sys-prefix jupyter_timestamp_filename
 ```
 
