@@ -1,17 +1,4 @@
-#! /usr/bin/env python
-# -*- coding: utf-8 -*-
-# vim:fenc=utf-8
-#
-# Copyright © 2020 fx-kirin <fx.kirin@gmail.com>
-#
-# Distributed under terms of the MIT license.
-
-"""
-
-"""
-
-from notebook.utils import url_path_join
-from notebook.base.handlers import IPythonHandler
+__version__ = '0.1.0'
 import re
 import datetime
 

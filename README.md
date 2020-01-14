@@ -1,19 +1,10 @@
 ## How to use
 
-Add this file to your IPython library directory like `site-packages/IPython/extensions`.
-
-And modify `~/.jupyter/jupyter_notebook_config.json` file like below.
-
-```json:jupyter_notebook_config.json
-{
-  "NotebookApp": {
-    "nbserver_extensions": {
-      "jupyter_nbextensions_configurator": true,
-      "add_timestamp_to_filename":true
-    }
-  }
-}
 ```
+pip install jupyter-timestampe-filename
+jupyter serverextension enable --sys-prefix jupyter_timestamp_filename
+```
+
 
 ## What it looks like.
 
