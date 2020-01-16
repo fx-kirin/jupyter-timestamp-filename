@@ -1,16 +1,16 @@
-__version__ = '0.1.0'
+__version__ = '0.1.1'
 import re
 import datetime
 
 
 def patched_increment_filename(self, filename, path="", insert=""):
     now = datetime.datetime.now()
-    now_string = now.strftime("%Y-%m-%d_%H:%M:%S")
+    now_string = now.strftime("%Y-%m-%d_%H-%M-%S")
     if filename[0:9] == "Untitled.":
         filename = "%s_%s.%s" % (filename[0:8], now_string, filename[9:])
     if insert == "-Copy":
-        if re.search(r"\d{4}-\d{2}-\d{2}_\d{2}:\d{2}:\d{2}", filename):
-            filename = re.sub(r"\d{4}-\d{2}-\d{2}_\d{2}:\d{2}:\d{2}", "%s-Copy" % (now_string), filename)
+        if re.search(r"\d{4}-\d{2}-\d{2}_\d{2}-\d{2}-\d{2}", filename):
+            filename = re.sub(r"\d{4}-\d{2}-\d{2}_\d{2}-\d{2}-\d{2}", "%s-Copy" % (now_string), filename)
         else:
             filename = re.sub(r"\.(\w+)$", r"_%s-Copy.\1" % (now_string), filename)
 
