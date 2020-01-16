@@ -10,8 +10,8 @@ jupyter serverextension enable --sys-prefix jupyter_timestamp_filename
 
 ```
 # Initial File Name
-Untitled_2020-01-12_23:54:44.ipynb
+Untitled_2020-01-12_23-54-44.ipynb
 
 # Copied File Name
-Untitled_2020-01-12_23:54:52-Copy.ipynb
+Untitled_2020-01-12_23-54-52-Copy.ipynb
 ```
