@@ -1,17 +1,24 @@
-## How to use
+# jupyter-timestamp-filename
 
-```
+A Jupyter Server extension that adds timestamps to untitled notebook filenames.
+
+## Install
+
+```bash
 pip install jupyter-timestamp-filename
-jupyter serverextension enable --sys-prefix jupyter_timestamp_filename
+jupyter server extension enable --sys-prefix --py jupyter_timestamp_filename
 ```
 
+## What it does
 
-## What it looks like.
+New untitled notebook:
 
+```text
+Untitled_2026-04-16_13-24-55.ipynb
 ```
-# Initial File Name
-Untitled_2020-01-12_23-54-44.ipynb
 
-# Copied File Name
-Untitled_2020-01-12_23-54-52-Copy.ipynb
+Duplicated notebook:
+
+```text
+Untitled_2026-04-16_13-24-55-Copy.ipynb
 ```
